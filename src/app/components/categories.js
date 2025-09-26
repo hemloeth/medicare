@@ -34,7 +34,7 @@ const Categories = () => {
     <div className='bg-white py-20 px-4'>
       <div className='max-w-7xl mx-auto text-center'>
         <h1 className='text-4xl font-poppins mb-4'>
-          Because hospitals aren't home.
+          Because hospitals aren&apos;t home.
           <br />
           Medify brings healthcare to you.
         </h1>

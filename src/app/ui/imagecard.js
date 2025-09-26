@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ImageCard = ({image, title, isFirst, isLast}) => {
   // Different styling for first and last cards
@@ -44,9 +45,11 @@ const ImageCard = ({image, title, isFirst, isLast}) => {
 
   return (
     <div className={getCardStyles()} style={getCardDimensions()}>
-        <img 
+        <Image 
           src={image} 
           alt={title} 
+          width={527}
+          height={284}
           className={getImageStyles()}
         />
         <h3 className={getTitleStyles()}>

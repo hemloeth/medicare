@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Polygon = ({ image, text }) => {
   return (
@@ -13,9 +14,11 @@ const Polygon = ({ image, text }) => {
         }}
       >
         {image && (
-          <img 
+          <Image 
             src={image} 
             alt={text || 'Icon'} 
+            width={40}
+            height={40}
             className='w-10 h-10 object-contain mb-2'
           />
         )}

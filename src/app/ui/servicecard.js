@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ServiceCard = ({image, title, description, minutes, sortdescription, price, className = '', ...props}) => {
   return (
@@ -6,7 +7,7 @@ const ServiceCard = ({image, title, description, minutes, sortdescription, price
         <div className=''>
              <div className='border-1 border-[#f0f1f1] rounded-full w-fit p-2'>
              <div className='rounded-full w-fit bg-[#f0f1f1] '>
-            <img src={image} alt="service" className='w-[50px] h-[50px] p-2 rounded-full'/>
+            <Image src={image} alt="service" width={50} height={50} className='w-[50px] h-[50px] p-2 rounded-full'/>
             </div>
              </div>
             <h3 className='text-2xl font-poppins pt-4'>{title}</h3>
